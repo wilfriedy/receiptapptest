@@ -1,0 +1,54 @@
+.welcome-txt {
+  margin-bottom: 15px;
+}
+
+.hero-box {
+  width: 100%;
+  border: 1px solid #192747;
+  border-radius: 10px 0px 0px 10px;
+  border-left: 10px solid #1bc6d1;
+  margin-bottom: 25px;
+  height: 20vh;
+}
+
+.hero-box {
+  display: flex;
+  padding: 10px;
+  height: 25vh;
+}
+.hero-box .section-1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.hero-box .section-1 i {
+  font-size: 70px;
+  color: #1bc6d1;
+}
+.hero-box .section-2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-box .section-2 .inner-sec-1 {
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hero-box .section-2 .inner-sec-1 p {
+  font-size: 12px;
+  margin: 10px 0;
+}
+.hero-box .section-2 .inner-sec-1 h2 {
+  font-size: 16px;
+}
+.hero-box .section-2 .button-cam {
+  border: none;
+  width: 150px;
+  color: #1bc6d1;
+  background-color: #08193b;
+  border: 1px solid #192747;
+}/*# sourceMappingURL=hero.css.map */

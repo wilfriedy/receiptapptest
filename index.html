@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/body.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <link rel="stylesheet" href="./assets/css/default.css" />
+    <link rel="stylesheet" href="./assets/fontsawesome/fontawesome.css" />
+    <link rel="stylesheet" href="./assets/fontsawesome/solid.css" />
+    <title>Receipt App</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="container">
+      <nav class="nav-bar">
+        <div class="logo"><a href="#" id="logo">Receipt App</a></div>
+        <div class="menu">
+          <!-- open / close menu -->
+          <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li class="list-items">Home</li>
+          <li class="list-items">Dash board</li>
+          <li class="list-items">Reports</li>
+        </ul>
+      </nav>
+
+      <div class="body-container swiper">
+        <!-- first page -->
+        <div class="component-1 switch-page" id="component-1">
+          <!-- hello txt -->
+          <h3 class="welcome-txt">Hello , demo user</h3>
+          <div class="hero-box">
+            <div class="section-1">
+              <i class="fa-solid fa-id-card-clip"></i>
+            </div>
+            <div class="section-2">
+              <div class="inner-sec-1">
+                <h2>Effortlessly Accurate</h2>
+                <p>
+                  Introducing our receipt capturing app - a simple and
+                  convenient way to digitize your receipts, organize expenses,
+                  and track your spending on the go!
+                </p>
+              </div>
+              <div class="inner-sect-2">
+                <button class="button-cam brd-curved">
+                  Get started <i class="fa-solid fa-camera"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- second section -->
+          <h3 class="intro-txt">Navigate</h3>
+
+          <div class="second-half">
+            <div class="action-section">
+              <!-- select btn -->
+              <div class="select-btn">
+                <div class="select-opt">
+                  Create a new <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <ul class="list-cost-centers">
+                  <li class="items-cc">
+                    Automobile <i class="fa-solid fa-camera"></i>
+                  </li>
+                  <li class="items-cc">
+                    Fuel <i class="fa-solid fa-camera"></i>
+                  </li>
+                  <li class="items-cc">
+                    Food & Beverages <i class="fa-solid fa-camera"></i>
+                  </li>
+                  <li class="items-cc">
+                    Entertainment <i class="fa-solid fa-camera"></i>
+                  </li>
+                  <li class="items-cc">
+                    Travel <i class="fa-solid fa-camera"></i>
+                  </li>
+                  <li class="items-cc">
+                    Transport <i class="fa-solid fa-camera"></i>
+                  </li>
+                </ul>
+              </div>
+              <!-- alerts -->
+              <div class="alerts-box">
+                <div class="left-alert alert">
+                  <i class="fa-solid fa-triangle-exclamation"></i>
+                  <b>Report Emmergency</b>
+                </div>
+                <div class="right-alert alert">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <b>Report Issue</b>
+                </div>
+              </div>
+              <!-- end of alerts -->
+            </div>
+
+            <!-- chart but only on desktop -->
+
+            <!-- card section -->
+            <div class="cards-container">
+              <h3 class="intro-txt">Connected Accounts</h3>
+              <div class="card-list">
+                <div class="card">
+                  <div class="left-card">
+                    <i class="fa-regular fa-credit-card"></i>
+                  </div>
+                  <div class="right-card">
+                    <h4>Demo card ***4356</h4>
+                    <div class="p">Last updated 12hours ago</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second page / forms -->
+        <div class="compoment-2 switch-page" id="compoment-2">
+          <h3 class="intro-txt form-title">Add details</h3>
+          <div class="forms-outer">
+            <form action="" class="form">
+              <div class="outer-bdr-form">
+                <label title="cost center" for="cost-center"
+                  >Cost cencter <i class="fa-regular fa-circle-question"> </i
+                ></label>
+                <input type="text" id="cost-center " />
+              </div>
+              <div class="outer-bdr-form">
+                <label for="name-user" title="Owner of the receipt"
+                  >Name <i class="fa-regular fa-circle-question"> </i>
+                </label>
+                <input type="text" id="name-user" />
+              </div>
+              <div class="outer-bdr-form">
+                <label for="merchant"
+                  >Merchant <i class="fa-regular fa-circle-question"> </i
+                ></label>
+                <input type="text" id="merchant" />
+              </div>
+              <div class="outer-bdr-form add-lines">
+                <label for="add-lines"
+                  >Add Lines <i class="fa-regular fa-circle-question"> </i
+                ></label>
+                <!-- total field here -->
+                <input type="text" id="add-lines" />
+              </div>
+              <div class="outer-bdr-form">
+                <label for="location"
+                  >Location on receipt
+                  <i class="fa-regular fa-circle-question"> </i
+                ></label>
+                <input type="text" id="location" />
+              </div>
+              <div class="outer-bdr-form">
+                <label for="captured-time"
+                  >Captured Time & Location
+                  <i class="fa-regular fa-circle-question"> </i
+                ></label>
+                <div class="error-forms">error</div>
+                <input type="text" id="captured-time" />
+              </div>
+              <div class="outer-bdr-form">
+                <label for="description"
+                  >Description <i class="fa-regular fa-circle-question"> </i
+                ></label>
+                <input type="text" id="description" />
+              </div>
+              <div class="form-actions">
+                <div class="submit form-btn">Submit</div>
+                <div class="cancel form-btn">Cancel</div>
+              </div>
+              <div class="preview-btn">
+                <i class="fa-regular fa-images"></i>
+              </div>
+              <div class="preview-img"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
